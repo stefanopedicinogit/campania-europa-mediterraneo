@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Associazione - Campania Europa Mediterraneo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LogoAAAA-nobg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-secondary"><!--border-right-->
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary py-2 me-2"><a
+                                    class="ml-2 mr-2 text-body small" id="current-date-formatted" href="#"></a></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-ligth py-1 px-lg-5">
+            <div class="col-lg-10">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <img style="width: 20vw;" src="img/associazioneCampaniaEuropaMediterraneo.png"
+                        alt="Associazione Campania Europa Mediterraneo">
+                </a>
+            </div>
+            <div class="ml-auto">
+                <div class="d-flex">
+                    <img src="img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <div class="d-flex align-items-center">
+                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                            <span class="text-body">San Giorgio del S.</span>
+                            <small id="current-date"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Header<span
+                        class="text-white font-weight-normal">Mobile</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">L'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link active">Chi
+                                Siamo</a>
+                            <a href="perchemarzani.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                            <a href="comeassociarsi.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Premio Marzani</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="premio-marzani/premio-marzani-2024.html"
+                                class="navbar-nav border border-secondary nav-item nav-link"
+                                style="min-width: 12.1rem !important;">Edizione 2024</a>
+                            <a href="premio-marzani/premio-marzani-2023.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
+                            <a href="premio-marzani/premio-marzani-2008.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Attivita' dell'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="palazzobocchini.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                                Palazzo Bocchini</a>
+                            <a href="incontriestate.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
+                                terrazza Marzani</a>
+                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I manifesti
+                                dell'associazione</a>
+                        </div>
+                    </div>
+                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a>
+                    <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
+
+                    <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
+                </div>
+                <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-0" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>-->
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid about pt-5" style="margin-bottom: -1.9vw;">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="d-flex h-100 border border-5 border-primary border-bottom-0 pt-4">
+                        <img style="margin-top: -0.9vw;" class="img-fluid mx-auto" src="img/Foto/Foto-5-768x512.jpg" />
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <div class="mb-3 pb-2">
+                        <h6 class="text-primary text-uppercase">CHI SIAMO</h6>
+                        <h1 class="display-6">L'associazione</h1>
+                    </div>
+                    <p class="mb-4">L’ Associazione Campania Europa Mediterraneo vuole essere un luogo di riflessione,
+                        di elaborazione e di dibattito che guarda alle trasformazioni sociali, politiche e culturali dei
+                        paesi del Mediterraneo, del Medio Oriente e dei Balcani operando per la crescita e lo sviluppo
+                        di un’informazione autonoma, libera e democratica. <br /> <br /> L’associazione fondata nel 2006
+                        da Enzo Parziale, responsabile del Dipartimento delle politiche internazionali e della
+                        cooperazione allo sviluppo della CGIL Campania, insieme ad un gruppo di persone di diversa
+                        provenienza culturale, accomunate dalla convinzione profonda del valore della democrazia,
+                        dell’autonomia culturale, del confronto delle idee e della partecipazione alla vita sociale,
+                        politica ed economica dei cittadini. <br /> <br /> I promotori dell’iniziativa, tutti impegnati
+                        nel campo della cultura, del giornalismo e anche della politica – poiché la politica senza
+                        cultura produce guasti profondi – animati da un forte interesse teso a determinare attraverso un
+                        lavoro di elaborazione “alta”, le condizioni per un’effettiva crescita culturale e sociale della
+                        collettività</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <div class="container-fluid py-5 mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 col-md-12">
+                    <div class="mb-3">
+                        <h6 class="text-primary text-uppercase">Impegno politico e sociale</h6>
+                        <h1 class="display-5">Cosa Facciamo</h1>
+                    </div>
+                    <p class="mb-5">L’Associazione Campania Europa Mediterraneo è impegnata socialmente e
+                        politicamente,
+                        prodigandosi su più fronti che spaziano e toccano varie tematiche importanti. Dai temi
+                        ambientali alla tutela dei diritti umani, dalla promozione della cultura e dell'istruzione alla
+                        lotta contro le disuguaglianze sociali, l'Associazione lavora costantemente per creare un futuro
+                        più sostenibile e inclusivo per tutti. <br /> <br /> Attraverso la sua attività, l'Associazione
+                        cerca di sensibilizzare l'opinione pubblica e di influenzare le politiche pubbliche per
+                        promuovere un cambiamento positivo nella società campana e mediterranea.</p>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="service-item bg-dark text-center p-5">
+                            <i class="fas fa-search fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">RICERCA</h4>
+                            <p class="mb-0">Ricerca, l’elaborazione di analisi politiche, economiche e sociali</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="service-item bg-dark text-center p-5">
+                            <i class="fas fa-fist-raised fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">LOTTA</h4>
+                            <p class="mb-0">Lotta contro l’esclusione sociale e ogni forma di razzismo</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-dark text-center p-5">
+                            <i class="fas fa-bullhorn fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">MANIFESTAZIONI</h4>
+                            <p class="mb-0">Organizzazione di manifestazioni d’interesse culturale e scientifico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row lg-12  mb-3 md-12">
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="service-item bg-dark text-center p-5">
+                            <i class="fas fa-globe fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">PROMOZIONE</h4>
+                            <p class="mb-0">Promozione, conoscenza e diffusione delle attività delle istituzioni europee
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="service-item bg-dark text-center p-5">
+                            <i class="fas fa-peace fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">FORMAZIONE</h4>
+                            <p class="mb-0">Formazione politica europea sui temi della pace, della sicurezza, dello
+                                sviluppo sostenibile</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-dark text-center py-5 px-4">
+                            <i class="fas fa-pen fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">PUBBLICAZIONI</h4>
+                            <p class="mb-0">Pubblicazione e diffusione di riviste e studi destinati alla conoscenza dei
+                                temi europei ed internazionali.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3" style="justify-content: center; align-items: center;">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="service-item bg-dark text-center py-5 px-4">
+                            <i class="fas fa-newspaper fa-3x text-primary mb-3 py-4"></i>
+                            <h4 class="text-primary">RASSEGNA ANNUALE</h4>
+                            <p class="mb-0">Rassegna annuale “Premio Internazionale Giornalistico e Letterario Marzani”,
+                                per la conoscenza e la valorizzazione delle diversità culturali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contattaci</h5>
+                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San
+                        Giorgio del Sannio, IT</p>
+                    <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
+                    <p class="font-weight-medium"><i
+                            class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Articoli Rilevanti</h5>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold ml-4">Quick Links</h5>
+                    <ul class="m-0">
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="premiomarzani.html">Premio Marzani</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="contact.html">Contattaci</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="https://www.iubenda.com/privacy-policy/56558257"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Privacy Policy">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Cookie Policy">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Foto</h5>
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All
+            RightsReserved.
+            Design and coded by <a href="">Stefano Pedicino</a></p>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- Privacy Policy by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
+    </script>
+
+    <!-- Cookie Policy by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
+    </script>
+</body>

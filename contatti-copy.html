@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Associazione - Campania Europa Mediterraneo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LogoAAAA-nobg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-secondary"><!--border-right-->
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary py-2 me-2"><a
+                                    class="ml-2 mr-2 text-body small" id="formatted-current-date" href="#"></a></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-ligth py-1 px-lg-5">
+            <div class="col-lg-10">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <img style="width: 20vw;" src="img/associazioneCampaniaEuropaMediterraneo.png"
+                        alt="Associazione Campania Europa Mediterraneo">
+                </a>
+            </div>
+            <div class="ml-auto">
+                <div class="d-flex">
+                    <img src="img/weather-icon.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <div class="d-flex align-items-center">
+                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                            <span class="text-body">San Giorgio del S.</span>
+                            <small id="current-date"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Header<span
+                        class="text-white font-weight-normal">Mobile</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">L'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi Siamo</a>
+                            <a href="perchemarzani.html" class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Premio Marzani</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="premiomarzani.html" class="navbar-nav border border-secondary nav-item nav-link" style="min-width: 12.1rem !important;">Edizione 2024</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Attivita' dell'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a Palazzo Bocchini</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla terrazza Marzani</a>
+                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I manifesti dell'associazione</a>
+                        </div>
+                    </div>
+                    <a href="#" class="border-right border-secondary nav-item nav-link">Comitato Scientifico e dei Saggi</a>
+                    <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
+                   
+                    <a href="contatti.html" class="nav-item nav-link active">Contattaci</a>
+                </div>
+                <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-0" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>-->
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class=" display-3 text-white mb-3 animated slideInDown"></h1>
+            <!--<nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pagine</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contattaci</li>
+                </ol>
+            </nav> -->
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="section-title bor container">
+            <div class="bg-white border border-top-0 p-4 mb-3 row g-5">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class=" display-6 mb-5">Per Qualsiasi Informazione, Contattaci</h1>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <p class="mb-4">Inserisci i dati di recapito nel form sottostante, un nostro incaricato ti
+                        risponderà nel più breve tempo possibile </p>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="from_name" placeholder="Nome..">
+                                    <label for="from_name">Nome & Cognome</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="from_email" placeholder="Email..">
+                                    <label for="from_email">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="telefono" placeholder="Telefono..">
+                                    <label for="telefono">Cellulare</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="object" placeholder="Oggetto della mail..">
+                                    <label for="object">Oggetto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Lascia un messaggio" id="message"
+                                        style="height: 80px"></textarea>
+                                    <label for="message">Messaggio</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary py-3 px-5" type="submit">Manda un messaggio</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                    <div class="position-relative rounded overflow-hidden h-100">
+                        <iframe class="position-relative w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.967763559138!2d14.972494713051184!3d41.2224729712018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a21afb905ca11%3A0x570c89d6fb917d00!2sViale%20della%20Resistenza%2C%2082020%20Buonalbergo%20BN!5e0!3m2!1sen!2sit!4v1716934251019!5m2!1sen!2sit"
+                            style="min-height: 450px; border:0;" allowfullscreen="" loading="lazy" aria-hidden="false"
+                            frameborder="0" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contattaci</h5>
+                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San Giorgio del Sannio, IT</p>
+                    <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
+                    <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Articoli Rilevanti</h5>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold ml-4">Quick Links</h5>
+                    <ul class="m-0">
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                            href="premiomarzani.html">Premio Marzani</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                            href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="mb-1">
+                        <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                            href="contact.html">Contattaci</a>
+                        </li>
+                        <li class="mb-1">
+                        <a href="https://www.iubenda.com/privacy-policy/56558257"
+                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                            title="Privacy Policy">Privacy
+                            Policy</a>
+                        </li>
+                        <li class="mb-1">
+                        <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
+                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                            title="Cookie Policy">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Foto</h5>
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All RightsReserved. 
+            Design and coded by <a href="">Stefano Pedicino</a></p>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

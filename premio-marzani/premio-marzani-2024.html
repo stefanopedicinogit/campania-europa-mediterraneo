@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Associazione - Campania Europa Mediterraneo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/LogoAAAA-nobg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-secondary"><!--border-right-->
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary py-2 me-2"><a
+                                    class="ml-2 mr-2 text-body small" id="current-date-formatted" href="#"></a></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-ligth py-1 px-lg-5">
+            <div class="col-lg-10">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <img style="width: 20vw;" src="../img/associazioneCampaniaEuropaMediterraneo.png"
+                        alt="Associazione Campania Europa Mediterraneo">
+                </a>
+            </div>
+            <div class="ml-auto">
+                <div class="d-flex">
+                    <img src="../img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <div class="d-flex align-items-center">
+                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                            <span class="text-body">San Giorgio del S.</span>
+                            <small id="current-date"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="../index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Header<span
+                        class="text-white font-weight-normal">Mobile</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="../index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">L'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="../chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi
+                                Siamo</a>
+                            <a href="../perchemarzani.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                            <a href="../comeassociarsi.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Premio Marzani</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="../premio-marzani/premio-marzani-2024.html"
+                                class="navbar-nav border border-secondary nav-item nav-link active"
+                                style="min-width: 12.1rem !important;">Edizione 2024</a>
+                            <a href="../premio-marzani/premio-marzani-2023.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
+                            <a href="../premio-marzani/premio-marzani-2008.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Attivita' dell'Associazione</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                                Palazzo Bocchini</a>
+                            <a href="../incontriestate.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
+                                terrazza Marzani</a>
+                            <a href="../manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
+                                manifesti
+                                dell'associazione</a>
+                        </div>
+                    </div>
+                    <a href="../comitato.html" class="border-right border-secondary nav-item nav-link">Comitato
+                        Scientifico
+                        e dei Saggi</a>
+                    <a href="../gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
+
+                    <a href="../contatti.html" class="nav-item nav-link">Contattaci</a>
+                </div>
+                <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-0" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>-->
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Main News Slider Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 px-0">
+                <div class="owl-carousel main-carousel position-relative">
+                    <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100"
+                            src="../img/premio-marzani/2024/654e82a3-6c58-402f-b01a-ff3d9d7bdbe0.JPG"
+                            style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Premio Marzani XVII Edizione</a>
+                                <a class="text-white" href="">Dic 03, 2024</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit
+                                amet elit. Proin vitae porta diam...</a>
+                        </div>
+                    </div>
+                    <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100"
+                            src="../img/premio-marzani/2024/cf3cccac-519a-4fea-aac7-9059f0453d4b.JPG"
+                            style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Premio Marzani XVII Edizione</a>
+                                <a class="text-white" href="">Dic 03, 2024</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit
+                                amet elit. Proin vitae porta diam...</a>
+                        </div>
+                    </div>
+                    <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100"
+                            src="../img/premio-marzani/2024/e867b2f6-80f7-436a-b66f-5a0a08c9b4c2.JPG"
+                            style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Premio Marzani XVII Edizione</a>
+                                <a class="text-white" href="">Dic 03, 2024</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit
+                                amet elit. Proin vitae porta diam...</a>
+                        </div>
+                    </div>
+                    <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100"
+                            src="../img/premio-marzani/2024/8ca9e11b-15a5-4140-99f9-11b90e87333e.JPG"
+                            style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Premio Marzani XVII Edizione</a>
+                                <a class="text-white" href="">Dic 03, 2024</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit
+                                amet elit. Proin vitae porta diam...</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5 px-0">
+                <div class="row mx-0">
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100" src="../img/premio-marzani/2024/copertina/IMG_3965.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100" src="../img/premio-marzani/2024/copertina/IMG_3966.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100" src="../img/premio-marzani/2024/copertina/IMG_3967.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100" src="../img/premio-marzani/2024/copertina/IMG_3970.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100" src="../img/premio-marzani/2024/copertina/IMG_3975.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="position-relative overflow-hidden" style="height: 250px;">
+                            <img class="img-fluid w-100 h-100"
+                                src="../img/premio-marzani/2024/copertina/fb1f0481-bf7a-49c8-ab91-2e09eca984fd.jpg"
+                                style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                        href="">Premio Marzani <br> XVII Edizione</a>
+                                    <a class="text-white" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum
+                                    dolor sit amet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main News Slider End -->
+
+
+    <!-- Breaking News Start -->
+    <div class="container-fluid bg-dark py-3 mb-3">
+        <div class="container">
+            <div class="row align-items-center bg-dark">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="bg-primary text-dark text-center font-weight-medium py-2" style="width: 170px;">
+                            Premio Marzani <br> XVII Edizione</div>
+                        <div class="owl-carousel tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                            style="width: calc(100% - 170px); padding-right: 90px;">
+                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold"
+                                    href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt,
+                                    sed faucibus nisl sodales</a></div>
+                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold"
+                                    href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt,
+                                    sed faucibus nisl sodales</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breaking News End -->
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid">
+        <div class="container" style="min-width: 90%; height: auto;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+                        <div class="bg-white border border-top-0 p-4">
+                            <div class="mb-3">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="">Premio Marzani XVII Edizione</a>
+                                <a class="text-body" href="">Jan 01, 2024</a>
+                            </div>
+                            <h1 class="mb-3 text-secondary text-uppercase font-weight-bold">EDIZIONE PREMIO MARZANI 2024
+                            </h1>
+                            <p>Un concerto coinvolgente dal titolo ‘Morricone for Cello&Piano’, che ha visto
+                                protagonisti i musicisti Emilio Mottola e Gennaro Musella, ha inaugurato la serata
+                                finale del “Premio Internazionale Giornalistico e Letterario Marzani“. </br>
+                                Un riconoscimento, giunto alla sua XVII edizione, che anno dopo anno si conferma come un
+                                importante punto di riferimento nel panorama culturale e giornalistico locale. La serata
+                                ha visto la partecipazione di diciassette premiati, più una menzione speciale.
+                            </p>
+                            <p>L’Associazione Campania Europa Mediterraneo, presieduta da Enzo Parziale, ha selezionato
+                                i riconoscimenti con attenzione, sostenuta anche dal patrocinio morale della Provincia
+                                di Benevento e del Comune di San Giorgio del Sannio. Il premio Marzani, istituito nel
+                                2008 da Enzo Parziale, celebra le figure che si distinguono nella comunicazione e nella
+                                cultura, enfatizzando il loro contributo alla discussione su economia e sviluppo, con un
+                                focus particolare sul Sud del mondo.
+                            </p>
+                            <h3 class="text-uppercase font-weight-bold mb-3">I TEMI TOCCATI</h3>
+
+                            <p>L’edizione di quest’anno si è concentrata su un tema di grande attualità: “L’Europa tra
+                                la guerra in Ucraina, i conflitti in Palestina e Medio Oriente, e le tensioni in Africa.
+                                La pace è ancora possibile?”. Interrogativo che ha stimolato un dibattito tra i premiati
+                                sulle sfide globali in un contesto come questo di crescente instabilità e offerto
+                                profondi spunti di riflessione.
+                            </p>
+                            <p>L’evento ha messo in luce le sfide della sicurezza
+                                globale e il ruolo cruciale del giornalismo, con un richiamo al tributo degli operatori
+                                dei media che hanno perso la vita nei conflitti recenti. </p>
+
+                            <h3 class="text-uppercase font-weight-bold mb-3">HANNO PRESO PARTE ALL'EVENTO .. </h3>
+                            <p>La serata ha visto la
+                                partecipazione di personalità di spicco, tra cui <b>Achille Mottola</b> come moderatore,
+                                <b>Olfa
+                                    Hamdi </b>, candidata alla presidenza della Tunisia.
+                            </p>
+
+                            <p><b>Teresa Simeone</b>, responsabile della comunicazione dell’<b>Associazione</b>, ha
+                                sottolineato
+                                l’importanza di questo premio come strumento di riflessione e dialogo: “Il premio
+                                <b>Marzani</b> è nato per riconoscere l’impegno di chi lavora quotidianamente nel
+                                giornalismo,
+                                nella cultura e nella diplomazia, promuovendo valori di dialogo e solidarietà. Sebbene
+                                le leve decisionali siano politiche e non possiamo cambiare le dinamiche globali,
+                                possiamo comunque discutere e analizzare le problematiche, cercando di superare il
+                                pessimismo con l’ottimismo della volontà”.
+                            </p>
+
+                            <h3 class="text-uppercase font-weight-bold mb-3">I PREMIATI</h3>
+                            <p>
+                                Tra i premiati si annoverano <b>Francesca Albanese</b>, relatrice speciale delle Nazioni
+                                Unite
+                                sui territori palestinesi occupati; <b>Luigi Vicinanza</b>, giornalista e sindaco di
+                                Castellammare di Stabia; <b>Marika Borrelli</b>, giornalista e scrittrice; <b>Roberto
+                                    Napoletano</b>,
+                                direttore de “Il Mattino”; l’imprenditrice <b>Antonella Oliviero</b>; il docente e
+                                scrittore
+                                <b>Nicola Sguera</b>; <b>Michelangelo Fetto</b>, attore e regista; <b>Antonio
+                                    Corvino</b>, economista e
+                                scrittore; <b>Giacomo De Cunto</b>, medico e cooperatore internazionale;
+                                <b>Francescantonio
+                                    Garippo</b>, esperto formazione e comunicazione; <b>Urbano Floreani</b>, capo del
+                                Servizio Pubblica
+                                Informazione e Relazione con i Media giornalistici dell’Aeronautica Militare; <b>Franco
+                                    Filice</b>, poeta e traduttore. Una menzione speciale è stata conferita al giovane
+                                musicista
+                                <b>Antonio Fusco</b>.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- News Detail End -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+
+    <!-- Slider Photo -->
+    <section class="slider-container" style="min-width: 90%; height: auto;">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <!-- images will be generated here -->
+            </div>
+            <div class="slider-nav">
+                <!-- navigation links will be generated here -->
+            </div>
+        </div>
+    </section>
+    <!-- End Slider Photo -->
+    <div class="container-fluid py-3">
+        <div class="">
+            <div class="px-lg-5 px-md-5 px-sm-3 mt-5 mb-3 ">
+                <div class="row align-items-center justify-content-center justify-self-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h4 class="m-0 text-uppercase font-weight-bold">ARTICOLI CORRELATI</h4>
+                            <!-- <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center justify-self-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img height="110" width="110" class="img-fluid" src="../img/Foto110x110/ytrqweaq111111.jpg"
+                                alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="">INTERVISTA</a>
+                                    <a class="text-body" href=""><small> Lug 04, 2022 </small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
+                                    href="https://www.caprievent.it/tv/intervista-al-presidente-enzo-parziale-dellassociazione-campania-europa-mediterraneo/">Intervista:
+                                    al Presidente Enzo Parziale</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" height="110" width="110"
+                                src="../img/Foto110x110/Screenshot_articolo_2023.png" alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="">ARTICOLO +
+                                        VIDEO</a>
+                                    <a class="text-body" href=""><small>Ago 04, 2023</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">ARTICOLO E
+                                    VIDEO
+                                    NTR24 -
+                                    EDIZIONE 2023</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" height="110" width="110"
+                                src="../img/Foto110x110/1D170A51-844E-4BE0-95B9-4B874FAE5186.jpeg" alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="">PANORAMA</a>
+                                    <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
+                                    href="https://www.notiziegeopolitiche.net/xv-premio-internazionale-giornalistico-e-letterario-marzani/">ARTICOLO
+                                    EDIZIONE 2022 NOTIZIE GEOPOLITICHE</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" height="110" width="110"
+                                src="../img/Foto110x110/654e82a3-6c58-402f-b01a-ff3d9d7bdbe0.JPG" alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="">ARTICOLO</a>
+                                    <a class="text-body" href=""><small>Set 17, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
+                                    href="https://www.anteprima24.it/benevento/premio-giornalistico-marzani-2/">SUCCESSO
+                                    PER
+                                    IL PREMIO
+                                    LETTERARIO MARZANI 2024</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--<div class="container-fluid">
+    <div class="container" style="min-width: 90%;">
+        <div class="row align-items-center justify-content-center justify-self-center" style="min-height: auto; display: flex; flex-wrap: nowrap;">
+            <div class="col-lg-8 col-md-8" style="flex: 1;">
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLabTv%2Fvideos%2F1155866378811469%2F&show_text=false&width=560&t=0"
+                    width="" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+    <!-- Libri presentati 
+
+    <div class="container-fluid">
+        <div class="container" style="min-width: 90%;">
+            <div class="row" style="min-height: auto; display: flex; flex-wrap: nowrap;">
+                <div class="col-lg-2 col-md-0" style="flex: 1;">
+                </div>
+                <div class="col-lg-4 col-md-12 mt-3" style="flex: 1;">
+                    <h2 style="color: #31404B">LIBRI PRESENTATI</h2>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title" style="height: 15vh;">
+                                <img class="img-fluid" height="500vh" width="200vw" src="../img/Foto/Foto-2-768x512.jpg"
+                                    alt="">
+                                <a
+                                    href="https://www.amazon.it/bullo-vera-storia-Daniel-Zaccaro/dp/8851198276/ref=asc_df_8851198276?mcid=8886e271428635cea5c1eb0335c90f2d&tag=googshopit-21&linkCode=df0&hvadid=700824040200&hvpos=&hvnetw=g&hvrand=2048496382786495663&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9213311&hvtargid=pla-1605736325693&psc=1&gad_source=1">LIBRO
+                                    GIOVANNI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-12 mt-3 ml-5" style="flex: 1;">
+                    <h2 style="color: #31404B">DOWNLOADS</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title" style="height: 15vh;">
+                                <h3>Scarica le nostre risorse</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" download>
+                                            <i class="fas fa-file-download"></i> Brochure PDF
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" download>
+                                            <i class="fas fa-file-download"></i> Whitepaper PDF
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" download>
+                                            <i class="fas fa-file-download"></i> Infographic PNG
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mt-3" style="flex: 1;">
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Libri presentati -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contattaci</h5>
+                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo
+                        Moro,<br> San
+                        Giorgio del Sannio, IT</p>
+                    <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
+                    <p class="font-weight-medium"><i
+                            class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-secondary btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Articoli Rilevanti</h5>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum
+                            dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum
+                            dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                    <div class="">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                href="">ESEMPIO</a>
+                            <a class="text-body" href=""><small>Dic 03, 2024</small></a>
+                        </div>
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum
+                            dolor sit amet
+                            elit. Proin vitae porta diam...</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold ml-4">Quick Links</h5>
+                    <ul class="m-0">
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="premiomarzani.html">Premio Marzani</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="contact.html">Contattaci</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="https://www.iubenda.com/privacy-policy/56558257"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Privacy Policy">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Cookie Policy">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="mb-4 text-white text-uppercase font-weight-bold">Foto</h5>
+                    <div class="row">
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <a href=""><img class="w-100" src="../img/Foto/Foto-1-768x576.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All
+            RightsReserved.
+            Design and coded by <a href="">Stefano Pedicino</a></p>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+
+    <!-- Privacy Policy by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
+    </script>
+
+    <!-- Cookie Policy by https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
+    </script>
+</body>
+
+</html>

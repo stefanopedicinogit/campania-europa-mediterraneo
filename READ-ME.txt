@@ -1,0 +1,2 @@
+Sito di Associazione Campania Europa Mediterraneo sviluppato in HTML, CSS, SCSS e JS da Stefano Pedicino.
+Tutti i diritti riservati.
