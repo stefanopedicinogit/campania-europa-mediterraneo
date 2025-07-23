@@ -208,7 +208,7 @@ function generateGalleryItem(folder, className, imageNumber) {
           <div class="portfolio--action">
             <div class="pos-vertical-center">
               <div class="portfolio--zoom">
-                <a class="img-gallery-item" href="assets/manifesti/${folder}/${imageNumber}.JPG" title="Manifesto Associazione Campania Europa Mediterraneo"></a>
+                <a class="img-gallery-item" href="assets/manifesti/${folder}/${imageNumber}.jpg" title="Manifesto Associazione Campania Europa Mediterraneo"></a>
               </div>
             </div>
           </div>
