@@ -87,15 +87,81 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand d-block d-lg-none">
-                <h1 class="m-0 display-4 text-uppercase text-primary">Header<span
-                        class="text-white font-weight-normal">Mobile</span></h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+            <div id="top-bar" class="bg-dark"
+                style="margin:auto !important; text-align: center; padding-bottom: 3.5rem !important;">
+                <i class="navbar-toggler-icon" id="menu-toggle"></i>
+                <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3 bg-dark" id="dropdown-menu">
+                    <div class="navbar-nav m-auto py-0">
+                        <a href="index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                                data-toggle="dropdown">L'Associazione</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi
+                                    Siamo</a>
+                                <a href="perchemarzani.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                                <a href="comeassociarsi.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                                data-toggle="dropdown">Premio Marzani</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="premio-marzani/premio-marzani-2024.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link"
+                                    style="min-width: 12.1rem !important;">Edizione 2024</a>
+                                <a href="premio-marzani/premio-marzani-2023.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                                <a href="premio-marzani/premio-marzani-2008.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                                data-toggle="dropdown">Attivita' dell'Associazione</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="palazzobocchini.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                                    Palazzo Bocchini</a>
+                                <a href="incontriestate.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
+                                    terrazza Marzani</a>
+                                <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
+                                    manifesti
+                                    dell'associazione</a>
+                                <a href="articoli.html"
+                                    class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
+                            </div>
+                        </div>
+                        <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                        <a href="comitato.html" class="border-right border-secondary nav-item nav-link active">Comitato</a>
+                        <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
+
+                        <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
+                    </div>
+                    <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-0" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>-->
+                </div>
+            </div>
+            <button style="margin-left:auto !important; margin-right:auto !important;" type="button"
+                class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span> <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-uppercase text-primary" style="font-size: 1.5rem;">Campania
+                        Europa
+                        <br><span class="text-white font-weight-normal" style="font-size: 1.5rem;">Mediterraneo</span>
+                    </h1>
+                </a>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
