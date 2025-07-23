@@ -203,7 +203,7 @@ function generateGalleryItem(folder, className, imageNumber) {
   return `
     <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item ${className}">
       <div class="portfolio--img">
-        <img src="assets/manifesti/${folder}/${imageNumber}.JPG" alt="Manifesto Associazione Campania Europa Mediterraneo">
+        <img src="assets/manifesti/${folder}/${imageNumber}.jpg" alt="Manifesto Associazione Campania Europa Mediterraneo">
         <div class="portfolio--hover">
           <div class="portfolio--action">
             <div class="pos-vertical-center">
