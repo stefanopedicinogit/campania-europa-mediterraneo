@@ -159,6 +159,7 @@
         }
     });
 
+    
 
     function setCurrentDayFormatted() {
         var currentDayFormatted = new Date().toLocaleString('en-US', {
@@ -183,6 +184,24 @@
     }
     setCurrentDay();
 })(jQuery);
+
+
+const bar = document.getElementById('top-bar');
+const scrollThreshold = 50;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  console.log('scrollTop:', scrollTop);
+  if (scrollTop > scrollThreshold) {
+    bar.classList.add('visible');
+  } else {
+    bar.classList.remove('visible');
+  }
+});
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  document.getElementById('dropdown-menu').classList.toggle('show');
+});
 
 function fetchImages(year) {
     const folderPath = '../img/premio-marzani/' + year + '/slider/';
@@ -227,3 +246,5 @@ const url = new URL(window.location.href);
 const year = url.pathname.split('-').pop().split('.')[0];
 
 fetchImages(year);
+
+

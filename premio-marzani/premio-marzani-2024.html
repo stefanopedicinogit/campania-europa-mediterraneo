@@ -66,18 +66,18 @@
         </div>
         <div class="row align-items-center bg-ligth py-1 px-lg-5">
             <div class="col-lg-10">
-                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                <a href="../index.html" class="navbar-brand p-0 d-none d-lg-block">
                     <img style="width: 20vw;" src="../img/associazioneCampaniaEuropaMediterraneo.png"
                         alt="Associazione Campania Europa Mediterraneo">
                 </a>
             </div>
             <div class="ml-auto">
                 <div class="d-flex">
-                    <img src="../img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <img src="" class="img-fluid w-100 me-2 mr-2" alt="" id="weather-icon">
                     <div class="d-flex align-items-center">
-                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <strong class="fs-4 text-secondary mr-3" id="temperature"></strong>
                         <div class="d-flex flex-column ms-2" style="width: 150px;">
-                            <span class="text-body">San Giorgio del S.</span>
+                            <span class="text-body" id="location"></span>
                             <small id="current-date"></small>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="../index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                    <a href="../index.html" class="border-right border-secondary nav-item nav-link ">Home</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
                             data-toggle="dropdown">L'Associazione</a>
@@ -122,9 +122,7 @@
                                 style="min-width: 12.1rem !important;">Edizione 2024</a>
                             <a href="../premio-marzani/premio-marzani-2023.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
-                            <a href="../premio-marzani/premio-marzani-2008.html"
+                            <a href="./premio-marzani-2008.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
                         </div>
                     </div>
@@ -132,7 +130,8 @@
                         <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
                             data-toggle="dropdown">Attivita' dell'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                            <a href="../palazzobocchini.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
                                 Palazzo Bocchini</a>
                             <a href="../incontriestate.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
@@ -140,11 +139,13 @@
                             <a href="../manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
                                 manifesti
                                 dell'associazione</a>
+                            <a href="../articoli.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
                         </div>
                     </div>
-                    <a href="../comitato.html" class="border-right border-secondary nav-item nav-link">Comitato
-                        Scientifico
-                        e dei Saggi</a>
+                    <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                    <a href="../comitato.html" class="border-right border-secondary nav-item nav-link">Comitato</a>
                     <a href="../gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
 
                     <a href="../contatti.html" class="nav-item nav-link">Contattaci</a>
@@ -468,52 +469,21 @@
                 <div class="row align-items-center justify-content-center justify-self-center">
                     <div class="col-lg-4">
                         <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img height="110" width="110" class="img-fluid" src="../img/Foto110x110/ytrqweaq111111.jpg"
-                                alt="">
+                            <img height="110" width="110" class="img-fluid"
+                                src="../img/Foto110x110/premio-marzani-650x250.png" alt="">
                             <div
                                 class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                        href="">INTERVISTA</a>
-                                    <a class="text-body" href=""><small> Lug 04, 2022 </small></a>
+                                        href="https://www.labtv.net/cultura/2024/09/16/grande-successo-per-la-xvii-edizione-del-premio-internazionale-giornalistico-e-letterario-marzani/">ARTICOLO</a>
+                                    <a class="text-body"
+                                        href="https://www.labtv.net/cultura/2024/09/16/grande-successo-per-la-xvii-edizione-del-premio-internazionale-giornalistico-e-letterario-marzani/"><small>
+                                            Set 16, 2024 </small></a>
                                 </div>
                                 <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
-                                    href="https://www.caprievent.it/tv/intervista-al-presidente-enzo-parziale-dellassociazione-campania-europa-mediterraneo/">Intervista:
-                                    al Presidente Enzo Parziale</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" height="110" width="110"
-                                src="../img/Foto110x110/Screenshot_articolo_2023.png" alt="">
-                            <div
-                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                        href="">ARTICOLO +
-                                        VIDEO</a>
-                                    <a class="text-body" href=""><small>Ago 04, 2023</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">ARTICOLO E
-                                    VIDEO
-                                    NTR24 -
-                                    EDIZIONE 2023</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                            <img class="img-fluid" height="110" width="110"
-                                src="../img/Foto110x110/1D170A51-844E-4BE0-95B9-4B874FAE5186.jpeg" alt="">
-                            <div
-                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                        href="">PANORAMA</a>
-                                    <a class="text-body" href=""><small>Dic 03, 2024</small></a>
-                                </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
-                                    href="https://www.notiziegeopolitiche.net/xv-premio-internazionale-giornalistico-e-letterario-marzani/">ARTICOLO
-                                    EDIZIONE 2022 NOTIZIE GEOPOLITICHE</a>
+                                    href="https://www.labtv.net/cultura/2024/09/16/grande-successo-per-la-xvii-edizione-del-premio-internazionale-giornalistico-e-letterario-marzani/">Grande
+                                    successo per la XVII edizione del Premio Internazionale Giornalistico e Letterario
+                                    “Marzani”</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -523,14 +493,53 @@
                                 class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                        href="">ARTICOLO</a>
-                                    <a class="text-body" href=""><small>Set 17, 2024</small></a>
+                                        href="https://www.anteprima24.it/benevento/premio-giornalistico-marzani-2">ARTICOLO</a>
+                                    <a class="text-body"
+                                        href="https://www.anteprima24.it/benevento/premio-giornalistico-marzani-2"><small>Set
+                                            17, 2024</small></a>
                                 </div>
                                 <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
                                     href="https://www.anteprima24.it/benevento/premio-giornalistico-marzani-2/">SUCCESSO
-                                    PER
-                                    IL PREMIO
-                                    LETTERARIO MARZANI 2024</a>
+                                    PER IL PREMIO LETTERARIO MARZANI 2024</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" height="110" width="110" src="../img/Foto110x110/Sguera-Fetto.webp"
+                                alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="https://www.ntr24.tv/2024/08/30/premio-internazionale-giornalistico-e-letterario-marzani-tra-i-premiati-anche-nicola-sguera-e-michelangelo-fetto/">ARTICOLO
+                                        + CULTURA</a>
+                                    <a class="text-body"
+                                        href="https://www.ntr24.tv/2024/08/30/premio-internazionale-giornalistico-e-letterario-marzani-tra-i-premiati-anche-nicola-sguera-e-michelangelo-fetto/"><small>Ago
+                                            30, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
+                                    href="https://www.ntr24.tv/2024/08/30/premio-internazionale-giornalistico-e-letterario-marzani-tra-i-premiati-anche-nicola-sguera-e-michelangelo-fetto/">
+                                    Premio Internazionale Giornalistico e Letterario «Marzani», tra i premiati anche
+                                    Nicola Sguera e Michelangelo Fetto - NTR24</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                            <img class="img-fluid" height="110" width="110" src="../img/Foto110x110/Cattura222.PNG"
+                                alt="">
+                            <div
+                                class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div class="mb-2">
+                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        href="http://www.ariaditroia.it/news/207-settembre-2024/2049-la-dottssa-marika-borrelli-riceve-il-premio-marzani-2024.html">ARTICOLO
+                                        + VIDEO</a>
+                                    <a class="text-body"
+                                        href="http://www.ariaditroia.it/news/207-settembre-2024/2049-la-dottssa-marika-borrelli-riceve-il-premio-marzani-2024.html"><small>Set
+                                            20, 2024</small></a>
+                                </div>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold"
+                                    href="http://www.ariaditroia.it/news/207-settembre-2024/2049-la-dottssa-marika-borrelli-riceve-il-premio-marzani-2024.html">La
+                                    dott.ssa Marika Borrelli riceve il “Premio Marzani” 2024</a>
                             </div>
                         </div>
                     </div>
@@ -539,7 +548,7 @@
             </div>
         </div>
     </div>
-<!--<div class="container-fluid">
+    <!--<div class="container-fluid">
     <div class="container" style="min-width: 90%;">
         <div class="row align-items-center justify-content-center justify-self-center" style="min-height: auto; display: flex; flex-wrap: nowrap;">
             <div class="col-lg-8 col-md-8" style="flex: 1;">

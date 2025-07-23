@@ -73,11 +73,11 @@
             </div>
             <div class="ml-auto">
                 <div class="d-flex">
-                    <img src="img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <img src="" class="img-fluid w-100 me-2 mr-2" alt="" id="weather-icon">
                     <div class="d-flex align-items-center">
-                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <strong class="fs-4 text-secondary mr-3" id="temperature"></strong>
                         <div class="d-flex flex-column ms-2" style="width: 150px;">
-                            <span class="text-body">San Giorgio del S.</span>
+                            <span class="text-body" id="location"></span>
                             <small id="current-date"></small>
                         </div>
                     </div>
@@ -121,8 +121,6 @@
                                 style="min-width: 12.1rem !important;">Edizione 2024</a>
                             <a href="premio-marzani/premio-marzani-2023.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
                             <a href="premio-marzani/premio-marzani-2008.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
                         </div>
@@ -140,22 +138,24 @@
                             <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
                                 manifesti
                                 dell'associazione</a>
+                            <a href="articoli.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
                         </div>
                     </div>
-                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link active">Comitato
-                        Scientifico
-                        e dei Saggi</a>
+                    <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link active">Comitato</a>
                     <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
 
                     <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
                 </div>
                 <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
-                <input type="text" class="form-control border-0" placeholder="Keyword">
-                <div class="input-group-append">
-                    <button class="input-group-text bg-primary text-dark border-0 px-3"><i
-                            class="fa fa-search"></i></button>
-                </div>
-            </div>-->
+                    <input type="text" class="form-control border-0" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>-->
             </div>
         </nav>
     </div>
@@ -174,15 +174,15 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/enzo_parziale.jpg"
-                            alt="Enzo Parziale Fondatore Premio Internazionale Giornalistico e Letterario Marzani">
+                        <!-- <img class="img-fluid" src="assets/comitato/enzo_parziale.jpg"
+                            alt="Enzo Parziale Fondatore Premio Internazionale Giornalistico e Letterario Marzani"> -->
                         <div class="position-relative text-center">
-                            <div class="team-text bg-dark text-white">
+                            <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase pt-2">Enzo Parziale</h5>
                                 <p class="m-0 px-3" style="font-size: small;">Fondatore Premio Internazionale
                                     Giornalistico e Letterario Marzani</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -191,20 +191,20 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/sandro_routolo.jpg"
-                            alt="Sandro Routolo Giornalista d'inchiesta">
+                        <!-- <img class="img-fluid" src="assets/comitato/sandro_routolo.jpg"
+                            alt="Sandro Routolo Giornalista d'inchiesta"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Sandro Routolo</h5>
                                 <p class="m-0">Giornalista d'inchiesta</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -213,43 +213,43 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/andrea_nicastro.jpg"
-                            alt="Andrea Nicastro Giornalista Inviato di Guerra del Corriere della Sera">
+                        <!-- <img class="img-fluid" src="assets/comitato/andrea_nicastro.jpg"
+                            alt="Andrea Nicastro Giornalista Inviato di Guerra del Corriere della Sera"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase pt-2">Andrea Nicastro</h5>
                                 <p class="m-0" style="font-size: small;">Giornalista Inviato di Guerra <br> del Corriere
                                     della Sera</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/luciana_borsatti.jpg"
-                            alt="Luciana Borsatti Giornalista e scrittrice">
+                        <!-- <img class="img-fluid" src="assets/comitato/luciana_borsatti.jpg"
+                            alt="Luciana Borsatti Giornalista e scrittrice"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Luciana Borsatti</h5>
                                 <p class="m-0">Giornalista e scrittrice</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -258,7 +258,7 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -266,14 +266,14 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/teresa_simeone.jpg"
-                            alt="Teresa Simeone Giornalista e scrittrice">
+                        <!-- <img class="img-fluid" src="assets/comitato/teresa_simeone.jpg"
+                            alt="Teresa Simeone Giornalista e scrittrice"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Teresa Simeone</h5>
                                 <p class="m-0">Giornalista e scrittrice</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -282,21 +282,21 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/lorenzo_zoppoli.jpg"
-                            alt="Lorenzo Zoppoli Giornalista e docente presso Università Federico II, Napoli">
+                        <!-- <img class="img-fluid" src="assets/comitato/lorenzo_zoppoli.jpg"
+                            alt="Lorenzo Zoppoli Giornalista e docente presso Università Federico II, Napoli"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Lorenzo Zoppoli</h5>
                                 <p class="m-0">Giuslavorista e docente presso <br>
                                     Università Federico II, Napoli</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -305,20 +305,20 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/tiziana_buccico.jpg"
-                            alt="Tiziana Buccico Giornalista esperta di questioni internazionali">
+                        <!-- <img class="img-fluid" src="assets/comitato/tiziana_buccico.jpg"
+                            alt="Tiziana Buccico Giornalista esperta di questioni internazionali"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Tiziana Buccico</h5>
                                 <p class="m-0">Giornalista esperta di <br>questioni internazionali</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -327,21 +327,21 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="assets/comitato/cristopher_cutajar.jpg"
-                            alt="Christoper Cutajar Segretario Ministro degli Esteri, Affari Europei e Commercio Internazionale della Repubblica di Malta">
+                        <!-- <img class="img-fluid" src="assets/comitato/cristopher_cutajar.jpg"
+                            alt="Christoper Cutajar Segretario Ministro degli Esteri, Affari Europei e Commercio Internazionale della Repubblica di Malta"> -->
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
                                 <h5 class="text-white text-uppercase">Christoper Cutajar</h5>
                                 <p class="m-0" style="font-size: x-small;">Segretario Ministro degli Esteri, Affari
                                     Europei e Commercio della Repubblica di Malta</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -350,23 +350,24 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/evarist_bartolo.jpg"
-                                alt="Evarist Bartolo Osservatore politiche internazionali, gia' Ministro degli Esteri della Repubblica di Malta">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Evarist Bartolo</h5>
-                                    <p class="m-0" style="font-size: 10px;">Osservatore politiche internazionali,
-                                        <br>gia' Ministro degli Esteri della Repubblica di Malta
-                                    </p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/evarist_bartolo.jpg"
+                                alt="Evarist Bartolo Osservatore politiche internazionali, gia' Ministro degli Esteri della Repubblica di Malta"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Evarist Bartolo</h5>
+                                <p class="m-0" style="font-size: 10px;">Osservatore politiche internazionali,
+                                    <br>gia' Ministro degli Esteri della Repubblica di Malta
+                                </p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                             class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -375,89 +376,20 @@
                                             class="fab fa-linkedin-in"></i></a>
                                     <a class="btn btn-outline-primary btn-square" href="#"><i
                                             class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/floriana_coppola.jpg"
-                                alt="Floriana Coppola Scrittice e poetessa">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Floriana Coppola</h5>
-                                    <p class="m-0">Scrittice e poetessa</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/raimondo_di_maio.jpg"
-                                alt="Raimondo Di Maio Libraio, editore di Dante e Descartes">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Raimondo Di Maio</h5>
-                                    <p class="m-0">Libraio, editore di <br>"Dante e Descartes"</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/antonella_oliviero.jpg"
-                                alt="Antonella Oliviero Presidente Nazionale Assoprovider Presidente Emittente LAB TV">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Antonella Oliviero</h5>
-                                    <p class="m-0" style="font-size: small;">Presidente Nazionale
-                                        Assoprovider<br>Presidente Emittente LAB TV</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/adelia_battista.jpg"
-                                alt="Adelia Battista Giornalista e scrittrice">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Adelia Battista</h5>
-                                    <p class="m-0">Giornalista e scrittrice</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/floriana_coppola.jpg"
+                                alt="Floriana Coppola Scrittice e poetessa"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Floriana Coppola</h5>
+                                <p class="m-0">Scrittice e poetessa</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                             class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -466,91 +398,20 @@
                                             class="fab fa-linkedin-in"></i></a>
                                     <a class="btn btn-outline-primary btn-square" href="#"><i
                                             class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/antonio_corvino.jpg"
-                                alt="Antonio Corvino Giornalista, scrittore, economista">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Antonio Corvino</h5>
-                                    <p class="m-0">Giornalista, scrittore, economista</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/vittorio_longhi.jpg"
-                                alt="Christoper Cutajar Segretario Ministro degli Esteri, Affari Europei e Commercio Internazionale della Repubblica di Malta">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Vittorio Longhi</h5>
-                                    <p class="m-0" style="font-size: x-small;">Giornalista e saggista (Il
-                                        Manifesto,<br>La Repubblica, The Guardian, New York Times)</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/manuela_giuliano.jpg"
-                                alt="Manuela Giuliano Giornalista professionista Founder Rewind Communication">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase pt-2">Manuela Giuliano</h5>
-                                    <p class="m-0" style="font-size: small;">Giornalista professionista <br>Founder
-                                        Rewind Communication</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" height="300px" width="300px" src="img/user.jpg"
-                                alt="Elda Romano Esperta questioni internazionali">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Elda Romano</h5>
-                                    <p class="m-0">Esperta questioni internazionali
-                                    </p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/raimondo_di_maio.jpg"
+                                alt="Raimondo Di Maio Libraio, editore di Dante e Descartes"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Raimondo Di Maio</h5>
+                                <p class="m-0">Libraio, editore di <br>"Dante e Descartes"</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                             class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -559,21 +420,21 @@
                                             class="fab fa-linkedin-in"></i></a>
                                     <a class="btn btn-outline-primary btn-square" href="#"><i
                                             class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/francesca_bellino.jpg"
-                                alt="Francesca Bellino Giornalista, scrittrice, autrice di Radio Televisiva">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase pt-2">Francesca Bellino</h5>
-                                    <p class="m-0" style="font-size: small;">Giornalista, scrittrice, <br>autrice di
-                                        Radio Televisiva</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/antonella_oliviero.jpg"
+                                alt="Antonella Oliviero Presidente Nazionale Assoprovider Presidente Emittente LAB TV"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Antonella Oliviero</h5>
+                                <p class="m-0" style="font-size: small;">Presidente Nazionale
+                                    Assoprovider<br>Presidente Emittente LAB TV</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                             class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -582,20 +443,22 @@
                                             class="fab fa-linkedin-in"></i></a>
                                     <a class="btn btn-outline-primary btn-square" href="#"><i
                                             class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
                     </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="team position-relative overflow-hidden mb-5">
-                            <img class="img-fluid" src="assets/comitato/fiorenzo_parziale.jpg"
-                                alt="Fiorenzo Parziale Docente Università La Sapienza Roma">
-                            <div class="position-relative text-center">
-                                <div class="team-text bg-primary text-white">
-                                    <h5 class="text-white text-uppercase">Fiorenzo Parziale</h5>
-                                    <p class="m-0">Docente Università <br> "La Sapienza" Roma</p>
-                                </div>
-                                <div class="team-social bg-dark text-center">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!--  <img class="img-fluid" src="assets/comitato/adelia_battista.jpg" 
+                     alt="Adelia Battista Giornalista e scrittrice">-->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Adelia Battista</h5>
+                                <p class="m-0">Giornalista e scrittrice</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                             class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -604,13 +467,151 @@
                                             class="fab fa-linkedin-in"></i></a>
                                     <a class="btn btn-outline-primary btn-square" href="#"><i
                                             class="fab fa-instagram"></i></a>
-                                </div>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!--        <img class="img-fluid" src="assets/comitato/antonio_corvino.jpg" -->
+                        <!-- alt="Antonio Corvino Giornalista, scrittore, economista"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Antonio Corvino</h5>
+                                <p class="m-0">Giornalista, scrittore, economista</p>
                             </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/vittorio_longhi.jpg"
+                                alt="Christoper Cutajar Segretario Ministro degli Esteri, Affari Europei e Commercio Internazionale della Repubblica di Malta"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Vittorio Longhi</h5>
+                                <p class="m-0" style="font-size: x-small;">Giornalista e saggista (Il
+                                    Manifesto,<br>La Repubblica, The Guardian, New York Times)</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/manuela_giuliano.jpg" 
+                alt="Manuela Giuliano Giornalista professionista Founder Rewind Communication"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase pt-2">Manuela Giuliano</h5>
+                                <p class="m-0" style="font-size: small;">Giornalista professionista <br>Founder
+                                    Rewind Communication</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" height="300px" width="300px" src="img/user.jpg" 
+                                alt="Elda Romano Esperta questioni internazionali"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Elda Romano</h5>
+                                <p class="m-0">Esperta questioni internazionali
+                                </p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/francesca_bellino.jpg" 
+                                alt="Francesca Bellino Giornalista, scrittrice, autrice di Radio Televisiva"> -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase pt-2">Francesca Bellino</h5>
+                                <p class="m-0" style="font-size: small;">Giornalista, scrittrice, <br>autrice di
+                                    Radio Televisiva</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team position-relative overflow-hidden mb-5">
+                        <!-- <img class="img-fluid" src="assets/comitato/fiorenzo_parziale.jpg" 
+                               alt="Fiorenzo Parziale Docente Università La Sapienza Roma">  -->
+                        <div class="position-relative text-center">
+                            <div class="team-text bg-primary text-white">
+                                <h5 class="text-white text-uppercase">Fiorenzo Parziale</h5>
+                                <p class="m-0">Docente Università <br> "La Sapienza" Roma</p>
+                            </div>
+                            <!-- <div class="team-social bg-dark text-center">
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-outline-primary btn-square" href="#"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Team End -->
 

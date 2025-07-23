@@ -73,11 +73,11 @@
             </div>
             <div class="ml-auto">
                 <div class="d-flex">
-                    <img src="img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <img src="" class="img-fluid w-100 me-2 mr-2" alt="" id="weather-icon">
                     <div class="d-flex align-items-center">
-                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <strong class="fs-4 text-secondary mr-3" id="temperature"></strong>
                         <div class="d-flex flex-column ms-2" style="width: 150px;">
-                            <span class="text-body">San Giorgio del S.</span>
+                            <span class="text-body" id="location"></span>
                             <small id="current-date"></small>
                         </div>
                     </div>
@@ -102,33 +102,52 @@
                 <div class="navbar-nav m-auto py-0">
                     <a href="index.html" class="border-right border-secondary nav-item nav-link active">Home</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">L'Associazione</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">L'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi Siamo</a>
-                            <a href="perchemarzani.html" class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi
+                                Siamo</a>
+                            <a href="perchemarzani.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                            <a href="comeassociarsi.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Premio Marzani</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Premio Marzani</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="premio-marzani-2024.html" class="navbar-nav border border-secondary nav-item nav-link" style="min-width: 12.1rem !important;">Edizione 2024</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
+                            <a href="premio-marzani/premio-marzani-2024.html"
+                                class="navbar-nav border border-secondary nav-item nav-link"
+                                style="min-width: 12.1rem !important;">Edizione 2024</a>
+                            <a href="premio-marzani/premio-marzani-2023.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                            <a href="premio-marzani/premio-marzani-2008.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Attivita' dell'Associazione</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Attivita' dell'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="palazzobocchini.html" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a Palazzo Bocchini</a>
-                            <a href="incontriestate.html" class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla terrazza Marzani</a>
-                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I manifesti dell'associazione</a>
+                            <a href="palazzobocchini.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                                Palazzo Bocchini</a>
+                            <a href="incontriestate.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
+                                terrazza Marzani</a>
+                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
+                                manifesti
+                                dell'associazione</a>
+                            <a href="articoli.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
                         </div>
                     </div>
-                    <a href="#" class="border-right border-secondary nav-item nav-link">Comitato Scientifico e dei Saggi</a>
+                    <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato</a>
                     <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
-                   
+
                     <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
                 </div>
                 <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
@@ -153,7 +172,8 @@
                         <div class="col-12">
                             <div class="section-title">
                                 <h4 class="m-0 text-uppercase font-weight-bold">Category: Business</h4>
-                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View
+                                    All</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -165,13 +185,15 @@
                                             href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold"
+                                        href="">Lorem ipsum dolor sit amet elit...</a>
                                     <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
                                         rebum clita rebum dolor stet amet justo</p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                            alt="">
                                         <small>John Doe</small>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -190,13 +212,15 @@
                                             href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold"
+                                        href="">Lorem ipsum dolor sit amet elit...</a>
                                     <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
                                         rebum clita rebum dolor stet amet justo</p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                            alt="">
                                         <small>John Doe</small>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -218,11 +242,13 @@
                                             href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold"
+                                        href="">Lorem ipsum dolor sit amet elit...</a>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                            alt="">
                                         <small>John Doe</small>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -241,11 +267,13 @@
                                             href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold"
+                                        href="">Lorem ipsum dolor sit amet elit...</a>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                            alt="">
                                         <small>John Doe</small>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -258,44 +286,56 @@
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +345,8 @@
                         <div class="col-lg-12">
                             <div class="row news-lg mx-0 mb-3">
                                 <div class="col-md-6 h-100 px-0">
-                                    <img class="img-fluid h-100" src="img/news-700x435-5.jpg" style="object-fit: cover;">
+                                    <img class="img-fluid h-100" src="img/news-700x435-5.jpg"
+                                        style="object-fit: cover;">
                                 </div>
                                 <div class="col-md-6 d-flex flex-column border bg-white h-100 px-0">
                                     <div class="mt-auto p-4">
@@ -314,13 +355,15 @@
                                                 href="">Business</a>
                                             <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                         </div>
-                                        <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                        <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold"
+                                            href="">Lorem ipsum dolor sit amet elit...</a>
                                         <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
                                             rebum clita rebum dolor stet amet justo</p>
                                     </div>
                                     <div class="d-flex justify-content-between bg-white border-top mt-auto p-4">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                                            <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                                alt="">
                                             <small>John Doe</small>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -334,50 +377,62 @@
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4">
                     <!-- Social Follow Start -->
                     <div class="mb-3">
@@ -385,28 +440,40 @@
                             <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
                         </div>
                         <div class="bg-white border border-top-0 p-3">
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
-                                <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                                style="background: #39569E;">
+                                <i class="fab fa-facebook-f text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Fans</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
-                                <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                                style="background: #52AAF4;">
+                                <i class="fab fa-twitter text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Followers</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #0185AE;">
-                                <i class="fab fa-linkedin-in text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                                style="background: #0185AE;">
+                                <i class="fab fa-linkedin-in text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Connects</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #C8359D;">
-                                <i class="fab fa-instagram text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                                style="background: #C8359D;">
+                                <i class="fab fa-instagram text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Followers</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
-                                <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                                style="background: #DC472E;">
+                                <i class="fab fa-youtube text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Subscribers</span>
                             </a>
-                            <a href="" class="d-block w-100 text-white text-decoration-none" style="background: #055570;">
-                                <i class="fab fa-vimeo-v text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <a href="" class="d-block w-100 text-white text-decoration-none"
+                                style="background: #055570;">
+                                <i class="fab fa-vimeo-v text-center py-4 mr-3"
+                                    style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
                                 <span class="font-weight-medium">12,345 Followers</span>
                             </a>
                         </div>
@@ -432,52 +499,67 @@
                         <div class="bg-white border border-top-0 p-3">
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
                                 <img class="img-fluid" src="img/news-110x110-5.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                <div
+                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                            href="">Business</a>
                                         <a class="text-body" href=""><small>Jan 01, 2045</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem
+                                        ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
@@ -536,9 +618,11 @@
             <div class="row py-4">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contattaci</h5>
-                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San Giorgio del Sannio, IT</p>
+                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San
+                        Giorgio del Sannio, IT</p>
                     <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
-                    <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <p class="font-weight-medium"><i
+                            class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
                     <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
                     <div class="d-flex justify-content-start">
                         <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
@@ -560,7 +644,8 @@
                                 href="">ESEMPIO</a>
                             <a class="text-body" href=""><small>Dic 03, 2024</small></a>
                         </div>
-                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
                             elit. Proin vitae porta diam...</a>
                     </div>
                     <div class="mb-3">
@@ -569,7 +654,8 @@
                                 href="">ESEMPIO</a>
                             <a class="text-body" href=""><small>Dic 03, 2024</small></a>
                         </div>
-                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
                             elit. Proin vitae porta diam...</a>
                     </div>
                     <div class="">
@@ -578,7 +664,8 @@
                                 href="">ESEMPIO</a>
                             <a class="text-body" href=""><small>Dic 03, 2024</small></a>
                         </div>
-                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet
+                        <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit
+                            amet
                             elit. Proin vitae porta diam...</a>
                     </div>
                 </div>
@@ -591,26 +678,26 @@
                         </li>
                         <li class="mb-1">
                             <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="premiomarzani.html">Premio Marzani</a>
+                                href="premiomarzani.html">Premio Marzani</a>
                         </li>
                         <li class="mb-1">
                             <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="gallery.html">Gallery</a>
+                                href="gallery.html">Gallery</a>
                         </li>
                         <li class="mb-1">
-                        <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="contact.html">Contattaci</a>
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="contact.html">Contattaci</a>
                         </li>
                         <li class="mb-1">
-                        <a href="https://www.iubenda.com/privacy-policy/56558257"
-                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            title="Privacy Policy">Privacy
-                            Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/56558257"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Privacy Policy">Privacy
+                                Policy</a>
                         </li>
                         <li class="mb-1">
-                        <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
-                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            title="Cookie Policy">Cookie Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Cookie Policy">Cookie Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -641,7 +728,8 @@
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All RightsReserved. 
+        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All
+            RightsReserved.
             Design and coded by <a href="">Stefano Pedicino</a></p>
         </p>
     </div>
@@ -660,6 +748,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
 
 
     <!-- Privacy Policy by https://www.FreePrivacyPolicy.com -->

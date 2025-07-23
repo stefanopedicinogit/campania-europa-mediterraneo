@@ -73,11 +73,11 @@
             </div>
             <div class="ml-auto">
                 <div class="d-flex">
-                    <img src="img/weather-icon.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <img src="" class="img-fluid w-100 me-2 mr-2" alt="" id="weather-icon">
                     <div class="d-flex align-items-center">
-                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <strong class="fs-4 text-secondary mr-3" id="temperature"></strong>
                         <div class="d-flex flex-column ms-2" style="width: 150px;">
-                            <span class="text-body">San Giorgio del S.</span>
+                            <span class="text-body" id="location"></span>
                             <small id="current-date"></small>
                         </div>
                     </div>
@@ -99,36 +99,55 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="border-right border-secondary nav-item nav-link">Home</a>
+                    <a href="index.html" class="border-right border-secondary nav-item nav-link active">Home</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">L'Associazione</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">L'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi Siamo</a>
-                            <a href="perchemarzani.html" class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
+                            <a href="chisiamo.html" class="navbar-nav border border-secondary nav-item nav-link">Chi
+                                Siamo</a>
+                            <a href="perchemarzani.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
+                            <a href="comeassociarsi.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Come associarsi</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Premio Marzani</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Premio Marzani</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="premiomarzani.html" class="navbar-nav border border-secondary nav-item nav-link" style="min-width: 12.1rem !important;">Edizione 2024</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
+                            <a href="premio-marzani/premio-marzani-2024.html"
+                                class="navbar-nav border border-secondary nav-item nav-link"
+                                style="min-width: 12.1rem !important;">Edizione 2024</a>
+                            <a href="premio-marzani/premio-marzani-2023.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
+                            <a href="premio-marzani/premio-marzani-2008.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary" data-toggle="dropdown">Attivita' dell'Associazione</a>
+                        <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
+                            data-toggle="dropdown">Attivita' dell'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a Palazzo Bocchini</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla terrazza Marzani</a>
-                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I manifesti dell'associazione</a>
+                            <a href="palazzobocchini.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                                Palazzo Bocchini</a>
+                            <a href="incontriestate.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
+                                terrazza Marzani</a>
+                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
+                                manifesti
+                                dell'associazione</a>
+                            <a href="articoli.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
                         </div>
                     </div>
-                    <a href="#" class="border-right border-secondary nav-item nav-link">Comitato Scientifico e dei Saggi</a>
+                    <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato</a>
                     <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
-                   
-                    <a href="contatti.html" class="nav-item nav-link active">Contattaci</a>
+
+                    <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
                 </div>
                 <!--<div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
                     <input type="text" class="form-control border-0" placeholder="Keyword">
@@ -189,7 +208,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="object" placeholder="Oggetto della mail..">
+                                    <input type="text" class="form-control" id="object"
+                                        placeholder="Oggetto della mail..">
                                     <label for="object">Oggetto</label>
                                 </div>
                             </div>
@@ -201,7 +221,8 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary py-3 px-5" type="submit">Manda un messaggio</button>
+                                <button type="submit" class="btn btn-primary py-3 px-5" type="submit">Manda un
+                                    messaggio</button>
                             </div>
                         </div>
                     </form>
@@ -227,9 +248,11 @@
             <div class="row py-4">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contattaci</h5>
-                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San Giorgio del Sannio, IT</p>
+                    <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San
+                        Giorgio del Sannio, IT</p>
                     <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
-                    <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <p class="font-weight-medium"><i
+                            class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
                     <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
                     <div class="d-flex justify-content-start">
                         <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
@@ -282,26 +305,26 @@
                         </li>
                         <li class="mb-1">
                             <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="premiomarzani.html">Premio Marzani</a>
+                                href="premiomarzani.html">Premio Marzani</a>
                         </li>
                         <li class="mb-1">
                             <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="gallery.html">Gallery</a>
+                                href="gallery.html">Gallery</a>
                         </li>
                         <li class="mb-1">
-                        <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            href="contact.html">Contattaci</a>
+                            <a class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                href="contact.html">Contattaci</a>
                         </li>
                         <li class="mb-1">
-                        <a href="https://www.iubenda.com/privacy-policy/56558257"
-                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            title="Privacy Policy">Privacy
-                            Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/56558257"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Privacy Policy">Privacy
+                                Policy</a>
                         </li>
                         <li class="mb-1">
-                        <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
-                            class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
-                            title="Cookie Policy">Cookie Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/56558257/cookie-policy"
+                                class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                                title="Cookie Policy">Cookie Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -332,7 +355,7 @@
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All RightsReserved. 
+        <p class="m-0 text-center">&copy; <a href="#">Associazione Campania Europa Mediterraneo</a>. All RightsReserved.
             Design and coded by <a href="">Stefano Pedicino</a></p>
         </p>
     </div>

@@ -73,11 +73,11 @@
             </div>
             <div class="ml-auto">
                 <div class="d-flex">
-                    <img src="img/weather/sun.png" class="img-fluid w-100 me-2 mr-2" alt="">
+                    <img src="" class="img-fluid w-100 me-2 mr-2" alt="" id="weather-icon">
                     <div class="d-flex align-items-center">
-                        <strong class="fs-4 text-secondary mr-3">28°C</strong>
+                        <strong class="fs-4 text-secondary mr-3" id="temperature"></strong>
                         <div class="d-flex flex-column ms-2" style="width: 150px;">
-                            <span class="text-body">San Giorgio del S.</span>
+                            <span class="text-body" id="location"></span>
                             <small id="current-date"></small>
                         </div>
                     </div>
@@ -108,7 +108,8 @@
                                 Siamo</a>
                             <a href="perchemarzani.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Perche' Marzani</a>
-                            <a href="comeassociarsi.html" class="navbar-nav border border-secondary nav-item nav-link active">Come associarsi</a>
+                            <a href="comeassociarsi.html"
+                                class="navbar-nav border border-secondary nav-item nav-link active">Come associarsi</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -120,8 +121,6 @@
                                 style="min-width: 12.1rem !important;">Edizione 2024</a>
                             <a href="premio-marzani/premio-marzani-2023.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2023</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Edizione 2022</a>
-                            <a href="#" class="navbar-nav border border-secondary nav-item nav-link">Etc, etc..</a>
                             <a href="premio-marzani/premio-marzani-2008.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Edizione 2008</a>
                         </div>
@@ -130,17 +129,22 @@
                         <a href="#" class="nav-link dropdown-toggle border-right border-secondary"
                             data-toggle="dropdown">Attivita' dell'Associazione</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="palazzobocchini.html" class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
+                            <a href="palazzobocchini.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">Serate d'autore a
                                 Palazzo Bocchini</a>
                             <a href="incontriestate.html"
                                 class="navbar-nav border border-secondary nav-item nav-link">Incontri d'estate alla
                                 terrazza Marzani</a>
-                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I manifesti
+                            <a href="manifesti.html" class="navbar-nav border border-secondary nav-item nav-link">I
+                                manifesti
                                 dell'associazione</a>
+                            <a href="articoli.html"
+                                class="navbar-nav border border-secondary nav-item nav-link">ARTICOLI RILEVANTI</a>
                         </div>
                     </div>
-                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
-                        e dei Saggi</a>
+                    <!-- <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato Scientifico
+                        e dei Saggi</a> -->
+                    <a href="comitato.html" class="border-right border-secondary nav-item nav-link">Comitato</a>
                     <a href="gallery.html" class="border-right border-secondary nav-item nav-link">Gallery</a>
 
                     <a href="contatti.html" class="nav-item nav-link">Contattaci</a>
@@ -165,19 +169,24 @@
                 <!-- Come Associarsi -->
                 <section id="come-associarsi" class="container-fluid py-5">
                     <div class="row justify-content-center">
-                        <div class="col-md-8 text-center">
-                            <img src="assets/join-us.png" style="width: 10vw;"   class="img-fluid mb-4">
+                        <div class="col-md-8 col-lg-6 col-sm-10 text-center">
+                            <img src="assets/join-us.png" style="width: 10vw;" class="img-fluid mb-4">
                             <h2 class="mb-4">Come Associarsi</h2>
-                            <p class="lead mb-5">Per diventare socio di Associazione Campania Europa Mediterraneo, dovrai semplicemente contattarci e fornirci i tuoi dati anagrafici, il motivo del tuo interesse ad aderire all'associazione ed altre informazioni richieste. </p>
-                            <p class="lead mb-5">Hai tre opzioni diverse per farci avere il tuo modulo di iscrizione: </p>
+                            <p class="lead mb-5">Per diventare socio di Associazione Campania Europa Mediterraneo,
+                                dovrai semplicemente contattarci e fornirci i tuoi dati anagrafici, il motivo del tuo
+                                interesse ad aderire all'associazione ed altre informazioni richieste. </p>
+                            <p class="lead mb-5">Hai tre opzioni diverse per farci avere il tuo modulo di iscrizione:
+                            </p>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">CONTATTI  <i class="fas fa-envelope"></i></h5>
-                                    <p class="card-text">Tramite la pagina contattaci di questo sito web. Inserendo le tue generalità anagrafiche ed il motivo del tuo interesse ad aderire all'associazione.</p>
+                                    <h5 class="card-title">CONTATTI <i class="fas fa-envelope"></i></h5>
+                                    <p class="card-text">Tramite la pagina contattaci di questo sito web. Inserendo le
+                                        tue generalità anagrafiche ed il motivo del tuo interesse ad aderire
+                                        all'associazione.</p>
                                     <a href="contatti.html" class="btn btn-primary"><b>CONTATTACI</b>
                                     </a>
                                 </div>
@@ -187,8 +196,10 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">WHATSAPP <i class="fab fa-whatsapp"></i></h5>
-                                    <p class="card-text">Tramite Whatsapp. <br />Specificando anche qui i tuoi dati anagrafici ed il motivo del tuo interesse ad aderire all'associazione.</p>
-                                    <a href="https://wa.me/+393510331998?text=Ciao,%20voglio%20associarmi%20all'Associazione%20Campania%20Europa%20Mediterraneo." target="_blank" class="btn btn-primary"><b>SCRIVICI</b></a>
+                                    <p class="card-text">Tramite Whatsapp. <br />Specificando anche qui i tuoi dati
+                                        anagrafici ed il motivo del tuo interesse ad aderire all'associazione.</p>
+                                    <a href="https://wa.me/+393296203216?text=Ciao,%20voglio%20associarmi%20all'Associazione%20Campania%20Europa%20Mediterraneo."
+                                        target="_blank" class="btn btn-primary"><b>SCRIVICI</b></a>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +230,8 @@
                     <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Via Aldo Moro,<br> San
                         Giorgio del Sannio, IT</p>
                     <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0824 33 3333</p>
-                    <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
+                    <p class="font-weight-medium"><i
+                            class="fa fa-envelope mr-2"></i>campaniaeuropamediterraneo@outlook.it</p>
                     <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Seguici</h6>
                     <div class="d-flex justify-content-start">
                         <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i
