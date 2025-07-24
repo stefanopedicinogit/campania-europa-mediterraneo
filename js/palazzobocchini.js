@@ -58,7 +58,7 @@
 
 
 function fetchImages() {
-    const folderPath = './assets/manifesti/manifesti_palazzo_bocchini';
+    const folderPath = './assets/manifesti/manifesti_palazzo_bocchini/';
     console.log('folderPath', folderPath);
     const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
     const sliderContainer = document.querySelector('.slider-container');
