@@ -58,7 +58,7 @@
 
 
 function fetchImages() {
-    const folderPath = '/img/manifesti/manifestiincontriestate/';
+    const folderPath = 'img/manifesti/manifestiincontriestate/';
     console.log('folderPath', folderPath);
     const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
     const sliderContainer = document.querySelector('.slider-container');
