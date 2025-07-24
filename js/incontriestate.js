@@ -58,7 +58,7 @@
 
 
 function fetchImages() {
-    const folderPath = '/assets/manifesti/manifesti-incontri-estate/';
+    const folderPath = '/assets/manifesti/manifestiincontriestate/';
     console.log('folderPath', folderPath);
     const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
     const sliderContainer = document.querySelector('.slider-container');
