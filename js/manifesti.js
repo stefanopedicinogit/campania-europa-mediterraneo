@@ -220,8 +220,8 @@ function generateGalleryItem(folder, className, imageNumber) {
 
 function getImageCount(folder) {
     if (folder === 'manifesti_varie') { return 19; }
-    else if (folder === 'manifesti_palazzo_bocchini') { return 12; }
-    else if (folder === 'manifesti_incontri_estate') { return 27; }
+    else if (folder === 'manifesti_palazzo_bocchini') { return 13; }
+    else if (folder === 'manifesti_incontri_estate') { return 33; }
     else if (folder === 'manifesti_premio_marzani') { return 16; }
     else    { return undefined; }
   }
