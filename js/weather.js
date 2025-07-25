@@ -34,7 +34,10 @@ function updateWeatherUI(data) {
 
     temperatureElement.textContent = `${(data.main.temp - 273.15).toFixed(1)}°C`;
     locationElement.textContent = data.name;
-    weatherIconElement.src = `../img/weather/${data.weather[0].main}.png`;
+    weatherIconElement.src = `../img/weather/${data.weather[0].icon}@2x.png`;
+    // weatherIconElement.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    // console.log(`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+
 
     // You can also update the current date element if needed
     const currentDate = new Date();
