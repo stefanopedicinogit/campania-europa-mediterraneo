@@ -97,7 +97,4 @@ function fetchImages() {
         })
 }
 
-const url = new URL(window.location.href);
-const year = url.pathname.split('-').pop().split('.')[0];
-
-fetchImages(year);
+fetchImages();
