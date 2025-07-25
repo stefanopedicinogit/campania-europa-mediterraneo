@@ -10307,3 +10307,9 @@ h6,
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  #top-bar.visible {
+    display: none;
+  }
+  
+}
