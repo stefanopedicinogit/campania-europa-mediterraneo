@@ -195,6 +195,7 @@ const years = [
   { year: 2024, className: 'filter-people' },
   { year: 2023, className: 'filter-resturant' },
   { year: 2008, className: 'filter-chefs' },
+  { year: "varie", className: 'filter-varie' },
 ];
 
 // Function to generate the HTML for a gallery item
@@ -221,6 +222,7 @@ function getImageCount(year) {
     if (year === 2024) { return 23; }
     else if (year === 2023) { return 48; }
     else if (year === 2008) { return 10; }
+    else if (year === "varie") { return 28; }
     else    { return undefined; }
   }
 
