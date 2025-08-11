@@ -63,8 +63,8 @@ function fetchImages() {
     const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
     const sliderContainer = document.querySelector('.slider-container');
     const slider = sliderContainer.querySelector('.slider-vertical');
-
-    fetch(folderPath, {
+    try {
+        fetch(folderPath, {
         headers: {
             Accept: 'application/json'
         }
@@ -95,6 +95,11 @@ function fetchImages() {
                 sliderNav.appendChild(navLink);
             });
         })
+    }
+    catch (error) {
+        console.error('Error fetching images:', error);
+    }
+    
 }
 
 fetchImages();
