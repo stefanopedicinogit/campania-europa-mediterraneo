@@ -230,7 +230,6 @@ function getImageCount(year) {
 function generateGallery() {
     const galleryHtml = [];
     years.forEach((year) => {
-      console.log('year', year);
       const imageCount = getImageCount(year.year);
       if (imageCount === undefined) {
         console.error('getImageCount is not implemented');
@@ -239,7 +238,6 @@ function generateGallery() {
       for (let i = 1; i <= imageCount; i++) {
         const imageNumber = i;
         galleryHtml.push(generateGalleryItem(year.year, year.className, imageNumber));
-        console.log('galleryHtml', galleryHtml);
       }
     });
     galleryContainer.innerHTML = galleryHtml.join('');

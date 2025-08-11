@@ -230,7 +230,6 @@ function getImageCount(folder) {
 function generateGallery() {
     const galleryHtml = [];
     folders.forEach((folder) => {
-      console.log('folder', folder);
       const imageCount = getImageCount(folder.folder);
       if (imageCount === undefined) {
         console.error('getImageCount is not implemented');
@@ -239,7 +238,6 @@ function generateGallery() {
       for (let i = 1; i <= imageCount; i++) {
         const imageNumber = i;
         galleryHtml.push(generateGalleryItem(folder.folder, folder.className, imageNumber));
-        console.log('galleryHtml', galleryHtml);
       }
     });
     galleryContainer.innerHTML = galleryHtml.join('');

@@ -64,16 +64,17 @@ function fetchImages() {
     const sliderContainer = document.querySelector('.slider-container');
     const slider = sliderContainer.querySelector('.slider-vertical');
 
-    fetch(folderPath, {
-        headers: {
-            Accept: 'application/json'
-        }
-    })
-        .then(response => response.text())
-        .then(data => {
-            const files = JSON.parse(data);
-            const images = [];
+   //     fetch(folderPath, {
+     //   headers: {
+       //     Accept: 'application/json',
+        //}
+    //})
+      //  .then(response => response.text())
+        //.then(data => {
+           // const files = JSON.parse(data);
 
+            const files = ['1.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg']
+            const images = [];
             files.forEach((file, index) => {
                 const filePath = folderPath + file;
                 const fileExtension = file.split('.').pop().toLowerCase();
@@ -94,7 +95,7 @@ function fetchImages() {
                 navLink.href = `#slide-${index + 1}`;
                 sliderNav.appendChild(navLink);
             });
-        })
-}
+        }
+    //)}
 
 fetchImages();
