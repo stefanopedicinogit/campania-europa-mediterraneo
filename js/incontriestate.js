@@ -64,14 +64,14 @@ function fetchImages() {
     const sliderContainer = document.querySelector('.slider-container');
     const slider = sliderContainer.querySelector('.slider-vertical');
     try {
-        fetch(folderPath, {
-        headers: {
-            Accept: 'application/json'
-        }
-    })
-        .then(response => response.text())
-        .then(data => {
-            const files = JSON.parse(data);
+   //     fetch(folderPath, {
+     //   headers: {
+       //     Accept: 'application/json',
+        //}
+    //})
+      //  .then(response => response.text())
+        //.then(data => {
+            const files = ['1.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '2.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '3.jpg', '30.jpg', '31.jpg', '32.jpg', '33.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
             const images = [];
 
             files.forEach((file, index) => {
@@ -94,8 +94,9 @@ function fetchImages() {
                 navLink.href = `#slide-${index + 1}`;
                 sliderNav.appendChild(navLink);
             });
-        })
-    }
+        }
+    //)
+   // }
     catch (error) {
         console.error('Error fetching images:', error);
     }
