@@ -106,3 +106,23 @@ function fetchImages() {
 }
 
 fetchImages();
+
+const slider = document.querySelector('.slider-vertical');
+let startX = 0;
+let endX = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+  if (endX - startX > 50) { // swipe right
+    // code to go to previous slide
+  } else if (endX - startX < -50) { // swipe left
+    // code to go to next slide
+  }
+});
