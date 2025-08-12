@@ -257,11 +257,9 @@
                         </div>
                         <div class="mb-4">
                             <h6 class="text-uppercase font-weight-bold">Informazioni contatto</h6>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut tenetur
-                                assumenda eum pariatur consequatur aliquam ab, a molestias iusto reiciendis quod
-                                distinctio, doloremque exercitationem atque possimus necessitatibus, nostrum cum? <a
+                            <p class="mb-4">Se hai bisogno di informazioni aggiuntive, non esitare a contattarci. <a
                                     href="">Scrivici</a>.</p>
-                            <div class="row col-lg-12 mb-4 ml-5">
+                            <div class="row col-lg-12 mb-4 ">
                                 <div class="mb-3">
                                     <div class="d-flex align-items-center mb-2">
                                         <i class="fa fa-envelope-open text-primary mr-2"></i>
@@ -506,10 +504,10 @@
                         }
                     )
                         .then((response) => {
-                            console.log('SUCCESS!', response.status, response.text);
+                            alert('EMAIL INVIATA CORRETTAMENTE!', response.status, response.text);
                         })
                         .catch((err) => {
-                            console.log('FAILED...', err);
+                            alert('ERRORE DURANTE L\'INVIO DELLA EMAIL', err);
                         });
                 });
         </script>
