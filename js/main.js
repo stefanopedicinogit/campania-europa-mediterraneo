@@ -202,6 +202,9 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     document.getElementById('dropdown-menu').classList.toggle('show');
 });
 
+let currentSlide = 0;
+let images = []; 
+
 function fetchImages(year) {
     const folderPath = '../img/premio-marzani/' + year + '/slider/';
     const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
@@ -225,7 +228,7 @@ function fetchImages(year) {
     else if (year === '2008') {
         files = ['IMG_20250206_0001.jpg', 'IMG_20250206_0002.jpg', 'IMG_20250206_0004.jpg', 'IMG_20250206_0005.jpg', 'IMG_20250206_0006.jpg', 'IMG_20250206_0007.jpg', 'IMG_20250206_0008.jpg', 'IMG_20250206_0009.jpg', 'IMG_20250206_0010.jpg', 'IMG_20250206_0011.jpg'];
     }
-    const images = [];
+    images = [];
 
     files.forEach((file, index) => {
         const filePath = folderPath + file;
@@ -255,4 +258,41 @@ const year = url.pathname.split('-').pop().split('.')[0];
 
 fetchImages(year);
 
+function updateSlide() {
+  const images = document.querySelectorAll('.slider-vertical img');
+  images.forEach((img, index) => {
+    if (index === currentSlide) {
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+}
 
+function previousSlide() {
+  currentSlide = (currentSlide - 1 + images.length) % images.length;
+  updateSlide();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % images.length;
+  updateSlide();
+}
+
+const slider = document.querySelector('.slider-vertical');
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+  if (endX - startX > 50) { // swipe right
+    previousSlide();
+  } else if (endX - startX < -50) { // swipe left
+    nextSlide();
+  }
+});

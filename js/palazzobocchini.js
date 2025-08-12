@@ -56,6 +56,8 @@
     setCurrentDay();
 })(jQuery);
 
+let currentSlide = 0;
+let images = []; 
 
 function fetchImages() {
     const folderPath = 'js/manifesti/manifesti_palazzo_bocchini/';
@@ -74,7 +76,7 @@ function fetchImages() {
            // const files = JSON.parse(data);
 
             const files = ['1.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg']
-            const images = [];
+            images = [];
             files.forEach((file, index) => {
                 const filePath = folderPath + file;
                 const fileExtension = file.split('.').pop().toLowerCase();
@@ -99,3 +101,43 @@ function fetchImages() {
     //)}
 
 fetchImages();
+
+
+function updateSlide() {
+  const images = document.querySelectorAll('.slider-vertical img');
+  images.forEach((img, index) => {
+    if (index === currentSlide) {
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+}
+
+function previousSlide() {
+  currentSlide = (currentSlide - 1 + images.length) % images.length;
+  updateSlide();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % images.length;
+  updateSlide();
+}
+
+const slider = document.querySelector('.slider-vertical');
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+  if (endX - startX > 50) { // swipe right
+    previousSlide();
+  } else if (endX - startX < -50) { // swipe left
+    nextSlide();
+  }
+});

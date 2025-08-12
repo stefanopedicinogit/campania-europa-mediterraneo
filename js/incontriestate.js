@@ -56,6 +56,8 @@
     setCurrentDay();
 })(jQuery);
 
+let currentSlide = 0;
+let images = []; 
 
 function fetchImages() {
     const folderPath = 'assets/manifesti/manifesti_incontri_estate/';
@@ -74,7 +76,7 @@ function fetchImages() {
                     //    const files = JSON.parse(data);
 
             const files = ['1.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '2.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '3.jpg', '30.jpg', '31.jpg', '32.jpg', '33.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
-            const images = [];
+            images = [];
 
             files.forEach((file, index) => {
                 const filePath = folderPath + file;
@@ -107,9 +109,28 @@ function fetchImages() {
 
 fetchImages();
 
+function updateSlide() {
+  const images = document.querySelectorAll('.slider-vertical img');
+  images.forEach((img, index) => {
+    if (index === currentSlide) {
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+}
+
+function previousSlide() {
+  currentSlide = (currentSlide - 1 + images.length) % images.length;
+  updateSlide();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % images.length;
+  updateSlide();
+}
+
 const slider = document.querySelector('.slider-vertical');
-let startX = 0;
-let endX = 0;
 
 slider.addEventListener('touchstart', (e) => {
   startX = e.touches[0].clientX;
@@ -121,8 +142,8 @@ slider.addEventListener('touchmove', (e) => {
 
 slider.addEventListener('touchend', () => {
   if (endX - startX > 50) { // swipe right
-    // code to go to previous slide
+    previousSlide();
   } else if (endX - startX < -50) { // swipe left
-    // code to go to next slide
+    nextSlide();
   }
 });

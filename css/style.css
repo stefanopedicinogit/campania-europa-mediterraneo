@@ -10331,3 +10331,9 @@ h6,
   }
   
 }
+
+@media (min-width: 768px) {
+  .swipe-mobile {
+    display: none;
+  }
+}
