@@ -9526,10 +9526,9 @@ h6,
 
 .back-to-top {
   position: fixed;
-  display: none;
   right: 30px;
   bottom: 30px;
-  z-index: 99;
+  z-index: 9999999999999999;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -10336,4 +10335,19 @@ h6,
   .swipe-mobile {
     display: none;
   }
+}
+
+.iubenda-tp-btn {
+  display: none !important; 
+  z-index: -1 !important;
+}
+
+.iubenda-cs-preferences-link {
+  display: none !important; 
+  z-index: -1 !important;
+}
+
+.iub__us-widget {
+  display: none !important; 
+  z-index: -1 !important;
 }
