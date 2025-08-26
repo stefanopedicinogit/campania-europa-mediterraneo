@@ -536,7 +536,7 @@
                                 <div
                                     class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-1"
                                             href="">ARTICOLO + VIDEO</a>
                                         <a class="text-body" href=""><small>Ago 04, 2023</small></a>
                                     </div>
@@ -730,7 +730,7 @@
                                     alt=""></a>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <a href=""><img class="img" height="100vh" width="280vw" src="img/Loghi/sponsor2.jpg"
+                            <a href=""><img class="img" height="100vh" width="220vw" src="img/Loghi/sponsor2.jpg"
                                     alt=""></a>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
@@ -823,22 +823,17 @@
                     </div>
                     Popular News End -->
 
-                    <!-- Newsletter Start 
+                    <!-- Newsletter Start -->
+
                     <div class="mb-3">
                         <div class="section-title mb-0">
                             <h4 class="mb-0 text-uppercase font-weight-bold">DONAZIONI</h4>
                         </div>
                         <div class="mt-2">
-                            <small class="text-secondary">Inserisci un importo per la donazione</small>
-                            <input id="amount-input" type="number" value="0.00" step="0.01" pattern="[0-9]{1,}.[0-9]{2}"
-                                placeholder="Enter amount">
-                            <small class="text-secondary">*Effettua una donazione tramite PayPal</small>
-                            <div class="mt-2" id="paypal-button-container"></div>
-
+                            <div id="paypal-container-NGCCNJLSWU49Y"></div>
                         </div>
-
                     </div>
-                Newsletter End -->
+                    <!-- Newsletter End -->
                 </div>
 
                 <!-- Tags Start 
@@ -1032,32 +1027,12 @@
 
     <!-- PayPal Javascript -->
     <script
-        src="https://www.paypal.com/sdk/js?client-id=ARm5pKNUpLC3aPPXJ4xcNMb4lNb4rfvSDcvmeDxyxyJ4dTdvyL2yKaAX33oiZNhovPF15QBePWsukfax&currency=EUR"></script>
+        src="https://www.paypal.com/sdk/js?client-id=BAAD2c_1NoaN5Xk7ZCM_WbNNfn255uJ4KUp8UOvzzqACfMotjKYeTyX3zuz7mgNZ0NVkMQHJCqjHXBu5ss&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+        </script>
     <script>
-        const amountInput = document.getElementById('amount-input');
-
-        amountInput.addEventListener('input', function () {
-            const value = parseFloat(amountInput.value.replace(/[^\d.]/g, ''));
-            amountInput.value = value.toFixed(2);
-        });
-        paypal.Buttons({
-            createOrder: function (data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-
-                        amount: {
-                            value: 10.00,
-                        },
-                        currency_code: 'EUR'
-                    }]
-                });
-            },
-            onApprove: function (data, actions) {
-                return actions.order.capture().then(function (details) {
-                    alert('Transaction completed by ' + details.payer.name.given_name);
-                });
-            }
-        }).render('#paypal-button-container');
+        paypal.HostedButtons({
+            hostedButtonId: "NGCCNJLSWU49Y",
+        }).render("#paypal-container-NGCCNJLSWU49Y")
     </script>
 </body>
 
