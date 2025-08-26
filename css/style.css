@@ -10337,16 +10337,6 @@ h6,
   }
 }
 
-.iubenda-tp-btn {
-  display: none !important; 
-  z-index: -1 !important;
-}
-
-.iubenda-cs-preferences-link {
-  display: none !important; 
-  z-index: -1 !important;
-}
-
 .iub__us-widget {
   display: none !important; 
   z-index: -1 !important;
